@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9333868E1EAD549500FF4B18 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 9333868D1EAD549500FF4B18 /* test.json */; };
+		933386901EAD560800FF4B18 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333868F1EAD560800FF4B18 /* Model.swift */; };
+		933CAFA11EAC1147001F6962 /* Facility+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CAF9D1EAC1147001F6962 /* Facility+CoreDataClass.swift */; };
+		933CAFA21EAC1147001F6962 /* Facility+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CAF9E1EAC1147001F6962 /* Facility+CoreDataProperties.swift */; };
+		933CAFA31EAC1147001F6962 /* Inspection+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CAF9F1EAC1147001F6962 /* Inspection+CoreDataClass.swift */; };
+		933CAFA41EAC1147001F6962 /* Inspection+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CAFA01EAC1147001F6962 /* Inspection+CoreDataProperties.swift */; };
+		935DD59F1EAD612D0077A4C4 /* FoodFacility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935DD59E1EAD612D0077A4C4 /* FoodFacility.swift */; };
+		935DD5A11EAD61360077A4C4 /* FoodInspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935DD5A01EAD61360077A4C4 /* FoodInspection.swift */; };
+		935DD5A41EAD61400077A4C4 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935DD5A21EAD61400077A4C4 /* JSONLoader.swift */; };
+		935DD5A51EAD61400077A4C4 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935DD5A31EAD61400077A4C4 /* JSONParser.swift */; };
+		938AC0D31EC2AABF009E7D14 /* AllTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938AC0D21EC2AABF009E7D14 /* AllTableViewController.swift */; };
+		938AC0D51EC2B1E1009E7D14 /* AllFacilityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938AC0D41EC2B1E1009E7D14 /* AllFacilityTableViewCell.swift */; };
+		938AC0D71EC2C46C009E7D14 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938AC0D61EC2C46C009E7D14 /* DetailsViewController.swift */; };
+		93B0C8C01EC2E68F00758A0C /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0C8BF1EC2E68F00758A0C /* FavoriteTableViewController.swift */; };
+		93B0C8C21EC2E6C500758A0C /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B0C8C11EC2E6C500758A0C /* FavoriteTableViewCell.swift */; };
+		B7657F461E9C279D003D3966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7657F451E9C279D003D3966 /* AppDelegate.swift */; };
+		B7657F4B1E9C279D003D3966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7657F491E9C279D003D3966 /* Main.storyboard */; };
+		B7657F4E1E9C279D003D3966 /* ChicagoFoodApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7657F4C1E9C279D003D3966 /* ChicagoFoodApp.xcdatamodeld */; };
+		B7657F501E9C279D003D3966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7657F4F1E9C279D003D3966 /* Assets.xcassets */; };
+		B7657F531E9C279D003D3966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7657F511E9C279D003D3966 /* LaunchScreen.storyboard */; };
+		B7657F5E1E9C279E003D3966 /* ChicagoFoodAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7657F5D1E9C279E003D3966 /* ChicagoFoodAppTests.swift */; };
+		B7657F691E9C279E003D3966 /* ChicagoFoodAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7657F681E9C279E003D3966 /* ChicagoFoodAppUITests.swift */; };
+		D67160041EC29AB000263CC1 /* MapUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67160031EC29AB000263CC1 /* MapUIViewController.swift */; };
+		D6A41E071EC2D7F90090AC67 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A41E061EC2D7F90090AC67 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7657F5A1E9C279E003D3966 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7657F3A1E9C279D003D3966 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7657F411E9C279D003D3966;
+			remoteInfo = ChicagoFoodApp;
+		};
+		B7657F651E9C279E003D3966 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7657F3A1E9C279D003D3966 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7657F411E9C279D003D3966;
+			remoteInfo = ChicagoFoodApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9333868D1EAD549500FF4B18 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		9333868F1EAD560800FF4B18 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		933CAF9D1EAC1147001F6962 /* Facility+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Facility+CoreDataClass.swift"; sourceTree = "<group>"; };
+		933CAF9E1EAC1147001F6962 /* Facility+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Facility+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		933CAF9F1EAC1147001F6962 /* Inspection+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Inspection+CoreDataClass.swift"; sourceTree = "<group>"; };
+		933CAFA01EAC1147001F6962 /* Inspection+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Inspection+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		935DD59E1EAD612D0077A4C4 /* FoodFacility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodFacility.swift; sourceTree = "<group>"; };
+		935DD5A01EAD61360077A4C4 /* FoodInspection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodInspection.swift; sourceTree = "<group>"; };
+		935DD5A21EAD61400077A4C4 /* JSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
+		935DD5A31EAD61400077A4C4 /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		938AC0D21EC2AABF009E7D14 /* AllTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllTableViewController.swift; sourceTree = "<group>"; };
+		938AC0D41EC2B1E1009E7D14 /* AllFacilityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllFacilityTableViewCell.swift; sourceTree = "<group>"; };
+		938AC0D61EC2C46C009E7D14 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		93B0C8BF1EC2E68F00758A0C /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
+		93B0C8C11EC2E6C500758A0C /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		B7657F421E9C279D003D3966 /* ChicagoFoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChicagoFoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7657F451E9C279D003D3966 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B7657F4A1E9C279D003D3966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7657F4D1E9C279D003D3966 /* ChicagoFoodApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChicagoFoodApp.xcdatamodel; sourceTree = "<group>"; };
+		B7657F4F1E9C279D003D3966 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7657F521E9C279D003D3966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7657F541E9C279D003D3966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7657F591E9C279E003D3966 /* ChicagoFoodAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChicagoFoodAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7657F5D1E9C279E003D3966 /* ChicagoFoodAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChicagoFoodAppTests.swift; sourceTree = "<group>"; };
+		B7657F5F1E9C279E003D3966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7657F641E9C279E003D3966 /* ChicagoFoodAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChicagoFoodAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7657F681E9C279E003D3966 /* ChicagoFoodAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChicagoFoodAppUITests.swift; sourceTree = "<group>"; };
+		B7657F6A1E9C279E003D3966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D67160031EC29AB000263CC1 /* MapUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapUIViewController.swift; sourceTree = "<group>"; };
+		D6A41E061EC2D7F90090AC67 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7657F3F1E9C279D003D3966 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6A41E071EC2D7F90090AC67 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7657F561E9C279E003D3966 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7657F611E9C279E003D3966 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		933386841EAD540400FF4B18 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				935DD59E1EAD612D0077A4C4 /* FoodFacility.swift */,
+				935DD5A01EAD61360077A4C4 /* FoodInspection.swift */,
+				935DD5A21EAD61400077A4C4 /* JSONLoader.swift */,
+				935DD5A31EAD61400077A4C4 /* JSONParser.swift */,
+				9333868D1EAD549500FF4B18 /* test.json */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		933CAF9B1EABFF37001F6962 /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+				B7657F451E9C279D003D3966 /* AppDelegate.swift */,
+				B7657F4F1E9C279D003D3966 /* Assets.xcassets */,
+				B7657F511E9C279D003D3966 /* LaunchScreen.storyboard */,
+				B7657F541E9C279D003D3966 /* Info.plist */,
+			);
+			name = Miscellaneous;
+			sourceTree = "<group>";
+		};
+		933CAF9C1EABFFAE001F6962 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				933CAF9D1EAC1147001F6962 /* Facility+CoreDataClass.swift */,
+				933CAF9E1EAC1147001F6962 /* Facility+CoreDataProperties.swift */,
+				933CAF9F1EAC1147001F6962 /* Inspection+CoreDataClass.swift */,
+				933CAFA01EAC1147001F6962 /* Inspection+CoreDataProperties.swift */,
+				933386841EAD540400FF4B18 /* JSON */,
+				9333868F1EAD560800FF4B18 /* Model.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B7657F391E9C279D003D3966 = {
+			isa = PBXGroup;
+			children = (
+				B7657F441E9C279D003D3966 /* ChicagoFoodApp */,
+				B7657F5C1E9C279E003D3966 /* ChicagoFoodAppTests */,
+				B7657F671E9C279E003D3966 /* ChicagoFoodAppUITests */,
+				B7657F431E9C279D003D3966 /* Products */,
+				D6A41E051EC2D7F90090AC67 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B7657F431E9C279D003D3966 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7657F421E9C279D003D3966 /* ChicagoFoodApp.app */,
+				B7657F591E9C279E003D3966 /* ChicagoFoodAppTests.xctest */,
+				B7657F641E9C279E003D3966 /* ChicagoFoodAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7657F441E9C279D003D3966 /* ChicagoFoodApp */ = {
+			isa = PBXGroup;
+			children = (
+				933CAF9C1EABFFAE001F6962 /* Model */,
+				933CAF9B1EABFF37001F6962 /* Miscellaneous */,
+				D67160031EC29AB000263CC1 /* MapUIViewController.swift */,
+				B7657F491E9C279D003D3966 /* Main.storyboard */,
+				93B0C8C11EC2E6C500758A0C /* FavoriteTableViewCell.swift */,
+				93B0C8BF1EC2E68F00758A0C /* FavoriteTableViewController.swift */,
+				938AC0D61EC2C46C009E7D14 /* DetailsViewController.swift */,
+				938AC0D41EC2B1E1009E7D14 /* AllFacilityTableViewCell.swift */,
+				938AC0D21EC2AABF009E7D14 /* AllTableViewController.swift */,
+				B7657F4C1E9C279D003D3966 /* ChicagoFoodApp.xcdatamodeld */,
+			);
+			path = ChicagoFoodApp;
+			sourceTree = "<group>";
+		};
+		B7657F5C1E9C279E003D3966 /* ChicagoFoodAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7657F5D1E9C279E003D3966 /* ChicagoFoodAppTests.swift */,
+				B7657F5F1E9C279E003D3966 /* Info.plist */,
+			);
+			path = ChicagoFoodAppTests;
+			sourceTree = "<group>";
+		};
+		B7657F671E9C279E003D3966 /* ChicagoFoodAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B7657F681E9C279E003D3966 /* ChicagoFoodAppUITests.swift */,
+				B7657F6A1E9C279E003D3966 /* Info.plist */,
+			);
+			path = ChicagoFoodAppUITests;
+			sourceTree = "<group>";
+		};
+		D6A41E051EC2D7F90090AC67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6A41E061EC2D7F90090AC67 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7657F411E9C279D003D3966 /* ChicagoFoodApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7657F6D1E9C279E003D3966 /* Build configuration list for PBXNativeTarget "ChicagoFoodApp" */;
+			buildPhases = (
+				B7657F3E1E9C279D003D3966 /* Sources */,
+				B7657F3F1E9C279D003D3966 /* Frameworks */,
+				B7657F401E9C279D003D3966 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChicagoFoodApp;
+			productName = ChicagoFoodApp;
+			productReference = B7657F421E9C279D003D3966 /* ChicagoFoodApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7657F581E9C279E003D3966 /* ChicagoFoodAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7657F701E9C279E003D3966 /* Build configuration list for PBXNativeTarget "ChicagoFoodAppTests" */;
+			buildPhases = (
+				B7657F551E9C279E003D3966 /* Sources */,
+				B7657F561E9C279E003D3966 /* Frameworks */,
+				B7657F571E9C279E003D3966 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7657F5B1E9C279E003D3966 /* PBXTargetDependency */,
+			);
+			name = ChicagoFoodAppTests;
+			productName = ChicagoFoodAppTests;
+			productReference = B7657F591E9C279E003D3966 /* ChicagoFoodAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B7657F631E9C279E003D3966 /* ChicagoFoodAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7657F731E9C279E003D3966 /* Build configuration list for PBXNativeTarget "ChicagoFoodAppUITests" */;
+			buildPhases = (
+				B7657F601E9C279E003D3966 /* Sources */,
+				B7657F611E9C279E003D3966 /* Frameworks */,
+				B7657F621E9C279E003D3966 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7657F661E9C279E003D3966 /* PBXTargetDependency */,
+			);
+			name = ChicagoFoodAppUITests;
+			productName = ChicagoFoodAppUITests;
+			productReference = B7657F641E9C279E003D3966 /* ChicagoFoodAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7657F3A1E9C279D003D3966 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "YUNFEI YANG";
+				TargetAttributes = {
+					B7657F411E9C279D003D3966 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 3D2TARSMT8;
+						ProvisioningStyle = Automatic;
+					};
+					B7657F581E9C279E003D3966 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 5XAFU57DGJ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B7657F411E9C279D003D3966;
+					};
+					B7657F631E9C279E003D3966 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 5XAFU57DGJ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B7657F411E9C279D003D3966;
+					};
+				};
+			};
+			buildConfigurationList = B7657F3D1E9C279D003D3966 /* Build configuration list for PBXProject "ChicagoFoodApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7657F391E9C279D003D3966;
+			productRefGroup = B7657F431E9C279D003D3966 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7657F411E9C279D003D3966 /* ChicagoFoodApp */,
+				B7657F581E9C279E003D3966 /* ChicagoFoodAppTests */,
+				B7657F631E9C279E003D3966 /* ChicagoFoodAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7657F401E9C279D003D3966 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7657F531E9C279D003D3966 /* LaunchScreen.storyboard in Resources */,
+				9333868E1EAD549500FF4B18 /* test.json in Resources */,
+				B7657F501E9C279D003D3966 /* Assets.xcassets in Resources */,
+				B7657F4B1E9C279D003D3966 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7657F571E9C279E003D3966 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7657F621E9C279E003D3966 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7657F3E1E9C279D003D3966 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				938AC0D31EC2AABF009E7D14 /* AllTableViewController.swift in Sources */,
+				933CAFA11EAC1147001F6962 /* Facility+CoreDataClass.swift in Sources */,
+				935DD5A41EAD61400077A4C4 /* JSONLoader.swift in Sources */,
+				93B0C8C21EC2E6C500758A0C /* FavoriteTableViewCell.swift in Sources */,
+				935DD5A51EAD61400077A4C4 /* JSONParser.swift in Sources */,
+				935DD5A11EAD61360077A4C4 /* FoodInspection.swift in Sources */,
+				935DD59F1EAD612D0077A4C4 /* FoodFacility.swift in Sources */,
+				D67160041EC29AB000263CC1 /* MapUIViewController.swift in Sources */,
+				933386901EAD560800FF4B18 /* Model.swift in Sources */,
+				938AC0D71EC2C46C009E7D14 /* DetailsViewController.swift in Sources */,
+				933CAFA41EAC1147001F6962 /* Inspection+CoreDataProperties.swift in Sources */,
+				93B0C8C01EC2E68F00758A0C /* FavoriteTableViewController.swift in Sources */,
+				938AC0D51EC2B1E1009E7D14 /* AllFacilityTableViewCell.swift in Sources */,
+				933CAFA21EAC1147001F6962 /* Facility+CoreDataProperties.swift in Sources */,
+				933CAFA31EAC1147001F6962 /* Inspection+CoreDataClass.swift in Sources */,
+				B7657F461E9C279D003D3966 /* AppDelegate.swift in Sources */,
+				B7657F4E1E9C279D003D3966 /* ChicagoFoodApp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7657F551E9C279E003D3966 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7657F5E1E9C279E003D3966 /* ChicagoFoodAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7657F601E9C279E003D3966 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7657F691E9C279E003D3966 /* ChicagoFoodAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7657F5B1E9C279E003D3966 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7657F411E9C279D003D3966 /* ChicagoFoodApp */;
+			targetProxy = B7657F5A1E9C279E003D3966 /* PBXContainerItemProxy */;
+		};
+		B7657F661E9C279E003D3966 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7657F411E9C279D003D3966 /* ChicagoFoodApp */;
+			targetProxy = B7657F651E9C279E003D3966 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B7657F491E9C279D003D3966 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7657F4A1E9C279D003D3966 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B7657F511E9C279D003D3966 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7657F521E9C279D003D3966 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7657F6B1E9C279E003D3966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7657F6C1E9C279E003D3966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7657F6E1E9C279E003D3966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3D2TARSMT8;
+				INFOPLIST_FILE = ChicagoFoodApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.cs.ChicagoFoodApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B7657F6F1E9C279E003D3966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3D2TARSMT8;
+				INFOPLIST_FILE = ChicagoFoodApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.cs.ChicagoFoodApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B7657F711E9C279E003D3966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5XAFU57DGJ;
+				INFOPLIST_FILE = ChicagoFoodAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.mizzouri.cs.ChicagoFoodAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChicagoFoodApp.app/ChicagoFoodApp";
+			};
+			name = Debug;
+		};
+		B7657F721E9C279E003D3966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5XAFU57DGJ;
+				INFOPLIST_FILE = ChicagoFoodAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.mizzouri.cs.ChicagoFoodAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChicagoFoodApp.app/ChicagoFoodApp";
+			};
+			name = Release;
+		};
+		B7657F741E9C279E003D3966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5XAFU57DGJ;
+				INFOPLIST_FILE = ChicagoFoodAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.mizzouri.cs.ChicagoFoodAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ChicagoFoodApp;
+			};
+			name = Debug;
+		};
+		B7657F751E9C279E003D3966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5XAFU57DGJ;
+				INFOPLIST_FILE = ChicagoFoodAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.mizzouri.cs.ChicagoFoodAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ChicagoFoodApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7657F3D1E9C279D003D3966 /* Build configuration list for PBXProject "ChicagoFoodApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7657F6B1E9C279E003D3966 /* Debug */,
+				B7657F6C1E9C279E003D3966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7657F6D1E9C279E003D3966 /* Build configuration list for PBXNativeTarget "ChicagoFoodApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7657F6E1E9C279E003D3966 /* Debug */,
+				B7657F6F1E9C279E003D3966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7657F701E9C279E003D3966 /* Build configuration list for PBXNativeTarget "ChicagoFoodAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7657F711E9C279E003D3966 /* Debug */,
+				B7657F721E9C279E003D3966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7657F731E9C279E003D3966 /* Build configuration list for PBXNativeTarget "ChicagoFoodAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7657F741E9C279E003D3966 /* Debug */,
+				B7657F751E9C279E003D3966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B7657F4C1E9C279D003D3966 /* ChicagoFoodApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B7657F4D1E9C279D003D3966 /* ChicagoFoodApp.xcdatamodel */,
+			);
+			currentVersion = B7657F4D1E9C279D003D3966 /* ChicagoFoodApp.xcdatamodel */;
+			path = ChicagoFoodApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B7657F3A1E9C279D003D3966 /* Project object */;
+}
